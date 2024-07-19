@@ -1,0 +1,193 @@
+<html>
+
+<head>
+    <title>Apeksh Restaurant - Spreading Hopes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 2em;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .intro img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1em;
+            transform: scale(0.95);
+            transition: transform 0.5s ease;
+        }
+
+        .intro img:hover {
+            transform: scale(1);
+        }
+
+        .intro h2 {
+            animation: slideInLeft 1s ease-out;
+        }
+
+        .mission,
+        .highlights {
+            margin-bottom: 2em;
+            animation: slideInRight 1s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .mission h3,
+        .highlights h3 {
+            margin-bottom: 0.5em;
+        }
+
+        .highlights ul {
+            list-style: disc inside;
+            padding: 0;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Apeksh</h1>
+        <p>Spreading Hopes</p>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="contact.html" class="nav-link" data-message=>Contact</a></li>
+                <li><a href="login.html" class="nav-link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="intro">
+            <img src="C:\Users\manikanta\OneDrive\Desktop\Apeksh\pictures\Picture1.jpg" alt="Apeksh Restaurant Image">
+            <h2>Welcome to Apeksh Restaurant</h2>
+            <p>Empowering the Disabled people: Led the design and development of Project "Apeksh" aimed at providing
+                employment opportunities to individuals with hearing and speech impairments. Orchestrated a
+                multidisciplinary team to create an inclusive digital platform, emphasizing accessibility and equal
+                opportunity.</p>
+        </div>
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p>Our mission is to create a warm and welcoming environment where everyone can enjoy delicious food while
+                supporting a cause that matters. We strive to provide opportunities for individuals with hearing and
+                speech impairments, ensuring they have a place where they can thrive and contribute meaningfully to
+                society.</p>
+        </div>
+        <div class="highlights">
+            <h3>Highlights</h3>
+            <ul>
+                <li>Inclusive employment opportunities</li>
+                <li>Diverse and delicious menu options</li>
+                <li>Warm and welcoming atmosphere</li>
+                <li>Community-focused initiatives</li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

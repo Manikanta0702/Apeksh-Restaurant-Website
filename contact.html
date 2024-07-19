@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <title>Contact Us - Apeksh Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        header p {
+            margin: 0.5em 0 0;
+            font-size: 1.2em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #555;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        .contact-info,
+        .recruitment-form {
+            background: white;
+            padding: 2em;
+            margin: 1em 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-info li {
+            margin: 0.5em 0;
+        }
+
+        .recruitment-form h2 {
+            margin-bottom: 0.5em;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .recruitment-form p {
+            margin-bottom: 1.5em;
+            color: #666;
+        }
+
+        .recruitment-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .recruitment-form label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .recruitment-form input,
+        .recruitment-form textarea {
+            padding: 0.8em;
+            margin-top: 0.3em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .recruitment-form input:focus,
+        .recruitment-form textarea:focus {
+            border-color: #333;
+            outline: none;
+        }
+
+        .recruitment-form button {
+            padding: 0.8em 1.2em;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+
+        .recruitment-form button:hover {
+            background: #555;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Apeksh</h1>
+        <p>Spreading Hopes</p>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Reach out to us through our contact form or via the contact information
+                provided below.</p>
+            <ul>
+                <li>Email: <a href="apekshrestaurant@gmail.com">apekshrestaurant@gmail.com</a></li>
+                <li>Instagram: <a href="https://instagram.com/apekshrestaurant" target="_blank">@apekshrestaurant</a>
+                </li>
+                <li>Phone: 9502291681</li>
+                <li>Address: Anurag University,Ghatkeshar </li>
+            </ul>
+        </section>
+
+        <section class="recruitment-form">
+            <h2>Join Our Team</h2>
+            <p>We are committed to inclusivity and welcome applications from people with disabilities. Please fill out
+                the form below to apply.</p>
+            <form id="recruitmentForm" action="/submit" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Why do you want to join us?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
